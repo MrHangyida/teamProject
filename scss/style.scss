@@ -24,10 +24,9 @@
     section {
         width: 100%;
         @include flex;
-<<<<<<< HEAD
-        background: orange;
         padding: 0 pxTorem(10px);
         @include sizing;
+        overflow-y: auto;
         .box {
             width: 100%;
             height: pxTorem(240px);
@@ -38,10 +37,8 @@
                 color: #f0f1f3;
                 font-size: pxTorem(18px);
                 margin-right: pxTorem(10px);
-=======
-        overflow-y: auto;
-        padding: 0 pxTorem(10px);
-        @include sizing;
+            }
+        }
         .list {
             width: 100%;
             height: pxTorem(200px);
@@ -67,7 +64,6 @@
                     margin-top: pxTorem(5px);
                     font-size: pxTorem(14px);
                 }
->>>>>>> 43106fba787c09d03be83db1462acc742732f976
             }
         }
     }
