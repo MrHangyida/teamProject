@@ -230,6 +230,26 @@ html {
   -webkit-flex: 1 1 0%;
   flex: 1 1 0%;
   background: orange;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrap section .box {
+  width: 100%;
+  height: 6.4rem;
+  background: red;
+}
+
+.wrap section .box p {
+  width: 100%;
+  height: 1.17333rem;
+  color: #f0f1f3;
+  font-size: 0.48rem;
+  margin-right: 0.26667rem;
 }
 
 .wrap footer {
