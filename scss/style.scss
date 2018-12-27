@@ -1,0 +1,49 @@
+@import '_mixin.scss';
+@import 'common.scss';
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    header {
+        width: 100%;
+        height: pxTorem(40px);
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        @include box_flex;
+        @include justify;
+        @include align;
+        input {
+            width: pxTorem(355px);
+            height: pxTorem(30px);
+            padding-left: pxTorem(10px);
+            @include sizing;
+            background: #f0f1f3;
+        }
+    }
+    section {
+        width: 100%;
+        @include flex;
+        background: orange;
+    }
+    footer {
+        width: 100%;
+        height: pxTorem(44px);
+        background: #fafafa;
+        @include box_flex;
+        @include align;
+        @include justify(space-around);
+        dl {
+            width: 100%;
+            @include box_flex;
+            @include align;
+            @include justify;
+            @include direction(column);
+            dt {
+                i {
+                    font-size: pxTorem(16px);
+                }
+            }
+        }
+    }
+}
