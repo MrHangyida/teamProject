@@ -226,10 +226,31 @@ html {
 }
 
 .wrap section {
-  width: 100%;
   -webkit-flex: 1 1 0%;
   flex: 1 1 0%;
-  background: orange;
+  background: red;
+}
+
+.wrap section .pic {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.wrap section .pic dl {
+  width: 20%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .wrap footer {

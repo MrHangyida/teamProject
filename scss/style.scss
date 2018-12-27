@@ -22,9 +22,19 @@
         }
     }
     section {
-        width: 100%;
-        @include flex;
-        background: orange;
+        @include flex(1);
+        background: red;
+        .pic {
+            @include box_flex;
+            width: 100%;
+            @include flexWrap(wrap);
+            dl {
+                width: 20%;
+                @include box_flex;
+                @include direction(column);
+                @include align;
+            }
+        }
     }
     footer {
         width: 100%;
