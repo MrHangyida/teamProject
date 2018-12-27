@@ -229,7 +229,56 @@ html {
   width: 100%;
   -webkit-flex: 1 1 0%;
   flex: 1 1 0%;
-  background: orange;
+  overflow-y: auto;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrap section .list {
+  width: 100%;
+  height: 5.33333rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.wrap section .list dl {
+  width: 20%;
+  height: 1.86667rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.wrap section .list dl dt {
+  width: 1.44rem;
+  height: 1.44rem;
+}
+
+.wrap section .list dl dt img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap section .list dl dd {
+  margin-top: 0.13333rem;
+  font-size: 0.37333rem;
 }
 
 .wrap footer {
